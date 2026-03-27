@@ -1,0 +1,52 @@
+.ozel_navbar 
+{
+	background-color: #36ACC2;
+	height: 80px;
+}
+.ozel_navbar .nav-link, 
+.ozel_navbar .navbar-brand {
+    color: #EDE7DA !important;
+}
+
+.anasayfa
+{
+	background-image: url('images/bg_log_reg.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+.ozel_hero
+{
+	height: 250px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	color: darkblue;
+	font-family: arial;
+
+	margin:50px ;
+	gap: 50px;
+
+}
+.btn_randevu
+{
+	background-color: #36ACC2;
+	color: white;
+	border: none;
+	padding: 12px 30px;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.btn-randevu:hover {
+    background-color: #2b8a9c; 
+    color: #f8f9fa;
+}
+
+

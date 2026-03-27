@@ -1,0 +1,73 @@
+body{
+	background-image: url("images/bg_log_reg.jpg");
+	font-family: "Arial";
+}
+h1
+{
+	color: darkblue;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h5
+{
+	color: darkblue;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.log-form
+{
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: auto;
+	border-radius: 15px;
+
+}
+.role-box
+{
+	display: flex;
+	align-items: center;
+	justify-content: center ;
+	margin: auto;
+
+	gap: 75px;
+}
+
+.role img
+{
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	cursor: pointer;
+}
+.role input:checked + img
+{
+	border: 3px solid white;
+	border-radius: 40px;
+	object-fit: cover;
+}
+
+input
+{
+	width: 250px;
+	height: 25px;
+	background-color: transparent;
+	margin-top:10px;
+	margin-bottom:10px;
+	border-radius: 10px;
+}
+.input-box
+{
+	width: 300px;
+	height: 45px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
