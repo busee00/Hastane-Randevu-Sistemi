@@ -1,0 +1,118 @@
+/* Genel Form Tasarımı */
+.card-degerlendirme {
+    border: none;
+    border-radius: 20px !important; /* Senin rounded-4 sınıfın gibi */
+    box-shadow: 0 10px 30px rgba(54, 172, 194, 0.1) !important;
+}
+
+.card-header-turkuaz {
+    background-color: #2c7a8a !important; /* Tablo başlık rengin */
+    border-radius: 20px 20px 0 0 !important;
+    padding: 25px !important;
+}
+
+.info-box-panel {
+    background-color: #eef9fb; /* .admin-badge arka planın */
+    border: 1px solid #d1edf2;
+    border-radius: 12px;
+}
+
+/* Yıldız Puanlama - Temana Uygun */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 15px;
+}
+
+.star-rating input { display: none; }
+
+.star-rating label {
+    font-size: 2.5rem;
+    color: #d1edf2; /* İnce kenarlık rengin */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover ve Seçilme Durumu */
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+    color: #36ACC2; /* Senin ana turkuaz rengin */
+    transform: scale(1.1);
+}
+
+/* Form Elemanları */
+.degerlendirme-textarea {
+    border: 1px solid #d1edf2 !important;
+    border-radius: 10px !important;
+    background-color: #fcfdfe !important;
+}
+
+.degerlendirme-textarea:focus {
+    border-color: #36ACC2 !important;
+    box-shadow: 0 0 0 0.25rem rgba(54, 172, 194, 0.1) !important;
+}
+
+/* Buton */
+.btn-panel-gonder {
+    background-color: #36ACC2 !important;
+    border: none !important;
+    padding: 15px !important;
+    font-weight: 600 !important;
+    border-radius: 10px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-panel-gonder:hover {
+    background-color: #2d91a4 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(54, 172, 194, 0.3) !important;
+}
+
+/* Her soru satırı için özel düzenleme */
+.anket-soru-row {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f8f9;
+}
+.anket-soru-row:last-child {
+    border-bottom: none;
+}
+.soru-metni {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #444;
+}
+/* Yıldızları biraz küçültelim ki yan yana sığsınlar */
+.star-rating label {
+    font-size: 1.8rem !important;
+}
+
+/* Evet-Hayır Buton Grubu Tasarımı */
+.btn-check:checked + .btn-outline-turkuaz {
+    background-color: #36ACC2 !important;
+    color: white !important;
+    border-color: #36ACC2 !important;
+}
+
+.btn-outline-turkuaz {
+    color: #36ACC2;
+    border-color: #36ACC2;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 8px 25px;
+    transition: all 0.2s;
+}
+
+.btn-outline-turkuaz:hover {
+    background-color: #f0f8f9;
+    color: #36ACC2;
+    border-color: #36ACC2;
+}
+
+.soru-container {
+    background-color: #ffffff;
+    border: 1px solid #f0f8f9;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
